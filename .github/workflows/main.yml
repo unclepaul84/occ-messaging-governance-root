@@ -22,7 +22,9 @@ jobs:
              
       - name: run python
         run: |
-          pip install PyGitHub
+          pip install gitdb
+          pip install gitpython
+          pip install PyGitHub      
           wget -O schemahunter.py https://raw.githubusercontent.com/unclepaul84/occ-governance-prototype/main/schema-hunter.py
           python schemahunter.py
         env:
