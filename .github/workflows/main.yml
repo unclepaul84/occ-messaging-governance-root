@@ -22,6 +22,8 @@ jobs:
              
       - name: run python
         run: |
+          git config --global user.email "hunter@theocc.com"
+          git config --global user.name "hunter"
           pip install gitdb
           pip install gitpython
           pip install PyGitHub      
