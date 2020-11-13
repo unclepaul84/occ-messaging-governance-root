@@ -17,6 +17,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: run python
         run: |
+          pip install git
           pip install PyGitHub
           wget -O schemahunter.py https://raw.githubusercontent.com/unclepaul84/occ-governance-prototype/main/schema-hunter.py
           python schemahunter.py
